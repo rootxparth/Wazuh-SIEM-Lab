@@ -1,0 +1,116 @@
+{
+  "_index": "wazuh-alerts-4.x-2026.05.18",
+  "_id": "gA84PJ4BAsViJ_c2TRI1",
+  "_score": 1,
+  "_source": {
+    "syscheck": {
+      "size_before": "0",
+      "uname_after": "root",
+      "mtime_after": "2026-05-18T17:52:57",
+      "size_after": "11",
+      "gid_after": "0",
+      "md5_before": "d41d8cd98f00b204e9800998ecf8427e",
+      "sha256_before": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "mtime_before": "2026-05-18T17:50:21",
+      "mode": "realtime",
+      "path": "/home/smasher/SOC/Wazuh/wazuh-docker/wazuh-agent/config/Demo.txt",
+      "sha1_after": "9b90ecbae67340dfce34a2609dd163e64b4e2a01",
+      "changed_attributes": [
+        "size",
+        "mtime",
+        "md5",
+        "sha1",
+        "sha256"
+      ],
+      "gname_after": "root",
+      "uid_after": "0",
+      "perm_after": "rw-r--r--",
+      "event": "modified",
+      "md5_after": "454b5e7520e5e189f2e99ad3eecd2c80",
+      "sha1_before": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "sha256_after": "045487da10f3c9d538257752d1eef8d17296909778259aba33ae2e289e6c1d3e",
+      "inode_after": 14680201
+    },
+    "agent": {
+      "ip": "192.168.1.5",
+      "name": "pop-os",
+      "id": "001"
+    },
+    "manager": {
+      "name": "wazuh.manager"
+    },
+    "rule": {
+      "mail": false,
+      "level": 7,
+      "pci_dss": [
+        "11.5"
+      ],
+      "hipaa": [
+        "164.312.c.1",
+        "164.312.c.2"
+      ],
+      "tsc": [
+        "PI1.4",
+        "PI1.5",
+        "CC6.1",
+        "CC6.8",
+        "CC7.2",
+        "CC7.3"
+      ],
+      "description": "Integrity checksum changed.",
+      "groups": [
+        "ossec",
+        "syscheck",
+        "syscheck_entry_modified",
+        "syscheck_file"
+      ],
+      "nist_800_53": [
+        "SI.7"
+      ],
+      "gdpr": [
+        "II_5.1.f"
+      ],
+      "firedtimes": 4,
+      "mitre": {
+        "technique": [
+          "Stored Data Manipulation"
+        ],
+        "id": [
+          "T1565.001"
+        ],
+        "tactic": [
+          "Impact"
+        ]
+      },
+      "id": "550",
+      "gpg13": [
+        "4.11"
+      ]
+    },
+    "decoder": {
+      "name": "syscheck_integrity_changed"
+    },
+    "full_log": "File '/home/smasher/SOC/Wazuh/wazuh-docker/wazuh-agent/config/Demo.txt' modified\nMode: realtime\nChanged attributes: size,mtime,md5,sha1,sha256\nSize changed from '0' to '11'\nOld modification time was: '1779126621', now it is '1779126777'\nOld md5sum was: 'd41d8cd98f00b204e9800998ecf8427e'\nNew md5sum is : '454b5e7520e5e189f2e99ad3eecd2c80'\nOld sha1sum was: 'da39a3ee5e6b4b0d3255bfef95601890afd80709'\nNew sha1sum is : '9b90ecbae67340dfce34a2609dd163e64b4e2a01'\nOld sha256sum was: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'\nNew sha256sum is : '045487da10f3c9d538257752d1eef8d17296909778259aba33ae2e289e6c1d3e'\n",
+    "input": {
+      "type": "log"
+    },
+    "@timestamp": "2026-05-18T17:52:57.596Z",
+    "location": "syscheck",
+    "id": "1779126777.891276",
+    "timestamp": "2026-05-18T17:52:57.596+0000"
+  },
+  "fields": {
+    "syscheck.mtime_after": [
+      "2026-05-18T17:52:57.000Z"
+    ],
+    "syscheck.mtime_before": [
+      "2026-05-18T17:50:21.000Z"
+    ],
+    "timestamp": [
+      "2026-05-18T17:52:57.596Z"
+    ],
+    "@timestamp": [
+      "2026-05-18T17:52:57.596Z"
+    ]
+  }
+}
