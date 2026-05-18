@@ -4,23 +4,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Lab Architecture](#lab-architecture)
-- [Features & Use Cases](#features--use-cases)
-  - [File Integrity Monitoring (FIM)](#-file-integrity-monitoring-fim)
-  - [Brute Force Investigation](#-brute-force-investigation)
-  - [Privilege Escalation Detection](#-privilege-escalation-detection)
-- [Tech Stack](#tech-stack)
-- [Setup & Installation](#setup--installation)
-- [Screenshots / Results](#screenshots--results)
-- [Key Takeaways](#key-takeaways)
-- [Future Enhancements](#future-enhancements)
-- [Author](#author)
-
----
-
 ## Overview
 
 This lab simulates a real-world SOC (Security Operations Center) environment using **Wazuh** as the core SIEM platform. The goal was to build, configure, and validate detection capabilities for common attack vectors that security analysts encounter daily.
@@ -33,22 +16,6 @@ The lab covers:
 All scenarios were tested end-to-end — from attack simulation to alert triage in the Wazuh dashboard.
 
 ---
-
-## Lab Architecture
-
-```
-┌─────────────────────────────────────────────────────┐
-│                    Wazuh Manager                    │
-│         (Indexer + Dashboard + Manager)             │
-└────────────────────┬────────────────────────────────┘
-                     │
-          ┌──────────┴──────────┐
-          │                     │
-   ┌──────▼──────┐       ┌──────▼──────┐
-   │ Linux Agent │       │Windows Agent│
-   │  (Victim-1) │       │  (Victim-2) │
-   └─────────────┘       └─────────────┘
-```
 
 - **Wazuh Manager** — Central brain; collects logs, correlates events, generates alerts
 - **Wazuh Agents** — Deployed on monitored endpoints; forward logs and events
