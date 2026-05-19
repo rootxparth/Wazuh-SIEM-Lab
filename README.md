@@ -35,9 +35,11 @@ Wazuh's FIM module (`syscheck`) hashes monitored files at regular intervals and 
 **Monitored Paths Configured:**
 ```xml
 <syscheck>
-  <directories realtime="yes" report_changes="yes" check_all="yes">/etc</directories>
-  <directories realtime="yes" report_changes="yes" check_all="yes">/var/www/html</directories>
-  <directories realtime="yes" check_all="yes">/usr/bin,/usr/sbin</directories>
+     <!-- Directories to check  (perform all possible verifications) -->
+    <directories>/etc,/usr/bin,/usr/sbin</directories>
+    <directories>/bin,/sbin,/boot</directories>
+    <directories realtime="yes">/home/smasher/SOC</directories>
+    <directories check_all="yes" report_changes="yes" realtime="yes">/root</directories>
 </syscheck>
 ```
 
