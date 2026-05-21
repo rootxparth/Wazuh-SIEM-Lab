@@ -71,7 +71,7 @@ Wazuh ingests `/var/log/auth.log` (Linux) and uses built-in rules to detect repe
 **Attack Simulation:**
 ```bash
 # Simulated brute force using Hydra
-hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.105
+hydra -l root -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.5
 ```
 
 **Key Rules Triggered:**
